@@ -1,0 +1,61 @@
+" https://www.shortcutfoo.com/blog/top-50-vim-configuration-options/
+" https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/
+
+" viminfo line memory for copy and pasting. See
+" https://stackoverflow.com/questions/3676855/vim-limited-line-memory
+set viminfo='100,<1000,s100,h
+
+
+" Disable compatibility with vi which can cause unexpected issues.
+set nocompatible
+
+" Enable type file detection. Vim will be able to try to detect the type of file in use.
+filetype on
+filetype plugin on
+
+" indentation  
+filetype indent on
+set autoindent
+set expandtab
+set shiftround
+set shiftwidth=4
+set smarttab
+set tabstop=4
+
+" search
+set hlsearch
+set ignorecase
+set incsearch
+set smartcase
+
+" text rendering
+set encoding=utf-8
+set linebreak
+set sidescrolloff=5
+syntax on
+set wrap
+
+" user interface
+set laststatus=2
+set ruler
+set wildmenu "display command line's tab complete options as a menu
+set wildmode=list:longest
+set number
+set relativenumber
+set mouse=a
+set background=dark
+
+" misc
+set backspace=indent,eol,start
+set backupdir=~/.cache/vim
+set dir=~/.cache/vim
+set history=1000
+set noswapfile
+set shell=/bin/zsh
+" set spell
+
+" mappings
+let mapleader = '\'
+inoremap jj <esc>
+nnoremap <leader>\ :noh<CR>
+
