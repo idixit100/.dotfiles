@@ -5,8 +5,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-if [ -r ~/dotfiles/.zsh/zshalias ]; then
-    source ~/dotfiles/.zsh/zshalias
+if [ -r ~/.dotfiles/zsh/zshalias ]; then
+    source ~/.dotfiles/zsh/zshalias
 fi
 
 # If you come from bash you might have to change your $PATH.
@@ -123,7 +123,7 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#p10k
+# source
 source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme 
 source /home/idixit/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
