@@ -32,4 +32,4 @@
 Remember to symlink your files
 
 ```ln -s ~/.dotfiles/zsh/zshrc ~/.zshrc
-```ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
+ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
