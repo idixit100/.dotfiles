@@ -1,5 +1,19 @@
 # dotfiles
 
+## [Terminal Emulators](https://itsfoss.com/linux-terminal-emulators/)
+
+[Kitty](https://sw.kovidgoyal.net/kitty/support/)
+
+## [Terminal Multiplexors](https://opensource.com/article/21/5/linux-terminal-multiplexer)
+
+iTerm
+
+## Window Managers
+
+* [Mac](https://www.makeuseof.com/tag/best-mac-window-management-tools/)
+* [Linux](https://www.ubuntupit.com/best-linux-window-managers-a-comprehensive-list-for-linux-users/)
+	* [i3](https://i3wm.org/)
+
 ## VIM
 
 ### plugins
