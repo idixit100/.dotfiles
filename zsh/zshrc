@@ -8,6 +8,9 @@ fi
 if [ -r ~/.dotfiles/zsh/zshalias ]; then
     source ~/.dotfiles/zsh/zshalias
 fi
+export PATH=$PATH:/home/idixit/.local/share/gem/ruby/3.0.0/bin
+export PATH=$PATH:/usr/lib/ruby/gems/3.0.0/bin
+
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -108,7 +111,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vim'
 else
-   export EDITOR='mvim'
+   export EDITOR='nvim'
 fi
 
 # Compilation flags
