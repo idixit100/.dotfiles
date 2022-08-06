@@ -1,0 +1,29 @@
+" https://medium.com/geekculture/neovim-configuration-for-beginners-b2116dbbde84
+" https://catonmat.net/vim-plugins-nerdtree-vim
+" https://stackoverflow.com/questions/3776117/what-is-the-difference-between-the-remap-noremap-nnoremap-and-vnoremap-mapping
+
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath = &runtimepath
+source ~/.dotfiles/vim/vimrc
+
+call plug#begin("~/.dotfiles/vim/plugged")
+ Plug 'dracula/vim'
+ Plug 'ryanoasis/vim-devicons'
+ Plug 'SirVer/ultisnips'
+ Plug 'honza/vim-snippets' " :help provider-python
+ Plug 'scrooloose/nerdtree'
+ Plug 'preservim/nerdcommenter'
+ Plug 'mhinz/vim-startify'
+ Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
+
+" color schemes
+if (has("termguicolors"))
+ set termguicolors
+ endif
+ syntax enable
+
+" colorscheme evening
+colorscheme dracula " open new split panes to right and below
+set splitright
+set splitbelow

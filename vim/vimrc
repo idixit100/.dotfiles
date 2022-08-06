@@ -12,15 +12,21 @@ set nocompatible
 " Enable type file detection. Vim will be able to try to detect the type of file in use.
 filetype on
 filetype plugin on
+set clipboard=unnamedplus    " using system clipboard
+filetype plugin on
+set cc=80                  " set an 80 column border for good coding style
+set cursorline              " highlight current cursorline
+set ttyfast                 " Speed up scrolling in Vim
 
 " indentation  
 filetype indent on
 set autoindent
 set expandtab
 set shiftround
-set shiftwidth=4
+set shiftwidth=2
 set smarttab
-set tabstop=4
+set tabstop=2
+set softtabstop=2           " see multiple spaces as tabstops so <BS> does the right thing
 
 " search
 set hlsearch
@@ -55,7 +61,8 @@ set shell=/bin/zsh
 " set spell
 
 " mappings
-let mapleader = '\'
+let mapleader = ','
 inoremap jj <esc>
-nnoremap <leader>\ :noh<CR>
+nnoremap <leader>h :noh<CR>
+nnoremap <leader>1 :NERDTreeToggle<CR>
 
