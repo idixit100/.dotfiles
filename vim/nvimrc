@@ -45,7 +45,7 @@ call plug#begin("~/.dotfiles/vim/plugged")
 
   Plug 'mhinz/vim-startify'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-  Plug 'neovim/nvim-lspconfig'
+  Plug 'neovim/nvim-lspconfig' " config to tell it language specifics
   Plug 'neoclide/coc.nvim', {'branch': 'release'} " Also add [coc-autocomplete](https://github.com/neoclide/coc-snippets)
   Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -87,7 +87,7 @@ set splitright
 set splitbelow
 
 " https://learnvimscriptthehardway.stevelosh.com/
-for fpath in split(glob('./nvim-configs/*.vim'), '\n')
+for fpath in split(glob('~/.dotfiles/vim/nvim-configs/*.vim'), '\n')
   exe 'source' fpath
 endfor
 
