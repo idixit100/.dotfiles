@@ -59,6 +59,7 @@ call plug#begin("~/.dotfiles/vim/plugged")
   Plug 'machakann/vim-sandwich' " s<a(dd)|d(elete)|r(replace)><motion>
   Plug 'Raimondi/delimitMate'   " complete () and \"
   Plug 'simnalamburt/vim-mundo'
+  Plug 'metakirby5/codi.vim' " inline repl; needs irb like quokka for js
   " Plug 'glacambre/firenvim' " vim in the browser -- read the [security
   " page](https://github.com/glacambre/firenvim/security/policy) before enabling 
 

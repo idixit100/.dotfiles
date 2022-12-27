@@ -7,4 +7,3 @@ hop.setup {
 local directions = require('hop.hint').HintDirection
 EOF
 
-lua << EOF

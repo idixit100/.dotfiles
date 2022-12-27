@@ -1,9 +1,6 @@
 let g:Lf_WindowPosition = 'popup'
 let g:Lf_PreviewInPopup = 1
 
-nnoremap <leader>1 :NERDTreeToggle<CR>
-nnoremap <leader><leader> :HopWord<CR>
-nnoremap <F5> :MundoToggle<CR>
 let g:Lf_ShortcutF = "<leader>ff"
 nnoremap <silent> <leader>fg :<C-U>Leaderf rg --no-messages --popup<CR>
 noremap <leader>fb :<C-U><C-R>=printf("Leaderf buffer %s", "")<CR><CR>
