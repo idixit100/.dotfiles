@@ -39,3 +39,11 @@ alias pug="ps aux | grep -i "
 alias tar=$(which gtar) # brew install gnu-tar
 alias tarthis="tar -pczf "
 alias untar="tar -zxvf "
+
+alias be="bundle exec"
+alias bes="bundle exec spring"
+alias nhl="HEADLESS=false"
+
+alias wfsrc="cd ~/ph/infrastructure;aws-vault exec nonprod -- ./scripts/console -e master"
+alias wfprwc="cd ~/ph/infrastructure;aws-vault exec prod -- ./scripts/console -e production -p readwrite"
+alias wfprc="cd ~/ph/infrastructure;aws-vault exec prod -- ./scripts/console -e production"
