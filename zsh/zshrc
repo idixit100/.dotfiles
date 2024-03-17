@@ -146,3 +146,6 @@ codi() {
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# https://grahamhelton.com/blog/ssh-cheatsheet/
+eval "$(ssh-agent -s)" # the agent is started, key is added in local .zsh file
+
