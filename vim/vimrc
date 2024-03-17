@@ -12,7 +12,6 @@ set nocompatible
 filetype on
 filetype plugin on
 set clipboard=unnamedplus    " using system clipboard
-filetype plugin on
 set cc=80                  " set an 80 column border for good coding style
 set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
