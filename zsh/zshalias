@@ -20,14 +20,21 @@ alias log="git log --pretty=format:'%Cgreen%ad%Creset %C(yellow)%h%Creset%C(yell
 alias glog="git log --oneline --decorate --color --graph"
 
 # other
+alias v='v'
+alias nv='nvim'
 alias zprf="nvim ~/.zprofile"
 alias zshc="nvim ~/.zshrc"
-alias .zshc="nvim ~/.dotfiles/zsh/zshrc"
+alias vc="nvim ~/.vimrc"
+alias nvc="cd ~/.config/nvim;nvim ./init.lua"
 alias .als="nvim ~/.dotfiles/zsh/zshalias"
-alias .vimc="nvim ~/.dotfiles/vim/vimrc"
+alias .zshc="nvim ~/.dotfiles/zsh/zshrc"
+alias .vc="nvim ~/.dotfiles/vim/vimrc"
 alias .i3c="nvim ~/.dotfiles/i3/config"
-alias vimc="nvim ~/.vimrc"
-alias nvimc="cd ~/.config/nvim;nvim ./init.lua"
+alias soa="source ~/.dotfiles/i3/config ~/.vimrc ~/.zshrc ~/.dotfiles/zsh/zshalias"
+alias sov="source ~/.vimrc"
+alias sozsh="source ~/.zshrc"
+alias soals="source ~/.dotfiles/zsh/zshalias"
+alias soi3="source ~/.dotfiles/i3/config"
 
 alias hi="ping 8.8.8.8"
 alias hai="traceroute 8.8.8.8"
